@@ -11,7 +11,7 @@ from src.Tarea_2 import understanding_freq
 def main(options):
     if options[1] == "Tarea_1":
         if len(options) < 3:
-            print("Por favor especifica el tipo de señal: seno, exponencial, triangular, cuadrada")
+            print("Especifica el tipo de señal: seno, exponencial, triangular, cuadrada")
             return
 
         signal_type = options[2].lower()
@@ -35,7 +35,7 @@ def main(options):
         if len(options) > 2:
             understanding_freq(options[2])
         else:
-            print("Por favor proporciona una frecuencia. Ejemplo: python main.py Tarea_2 2")
+            print("Proporciona una frecuencia. Ejemplo: python main.py Tarea_2 2")
 
     else:
         print("Opción no reconocida. Usa: Tarea_1 o Tarea_2")
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     if len(args) > 1:
         main(args)
     else:
-        print("Por favor proporciona un argumento")
+        print("Proporciona un argumento")
         print("Ejemplos:")
         print("  python main.py Tarea_1 seno")
         print("  python main.py Tarea_1 exponencial")

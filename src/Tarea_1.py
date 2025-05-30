@@ -50,7 +50,7 @@ def continuous_exponential():
 # 4. Señal exponencial discreta
 def discrete_exponential():
     samples = 100
-    ts = 0.05
+    ts = 0.05                       #Periodo de muestreo
     n = np.arange(-20, samples)
     t = n * ts
     u = np.heaviside(t, 1)
