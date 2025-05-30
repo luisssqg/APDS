@@ -1,21 +1,35 @@
-# Proyecto de Señales - main.py
+# Proyecto de Señales - Tareas 1 y 2
 
-Este proyecto permite graficar diferentes tipos de señales (senoidal, exponencial, triangular y cuadrada) en sus versiones continuas y discretas, además de realizar un análisis simple de frecuencia.
+Este proyecto permite graficar y analizar diferentes tipos de señales continuas y discretas, incluyendo señales sinusoidales, exponenciales, triangulares y cuadradas. Está organizado en dos tareas principales que pueden ser ejecutadas desde el archivo `main.py`.
 
----
+## Estructura del Proyecto
+    ├── main.py
+    ├── README.md
+    ├── requirements.txt
+    └── src/
+    ├── Tarea_1.py
+    ├── Tarea_2.py
+    └── utils/
+    └── grapher.py
 
-## Archivos principales
+Tarea 1: Graficar señales continuas y discretas
+python main.py Tarea_1 [tipo_de_senal]
 
-- `main.py`: Script principal para ejecutar las tareas.
-- `src/Tarea_1.py`: Implementa funciones para graficar señales continuas y discretas.
-- `src/Tarea_2.py`: Función para analizar señales en función de la frecuencia.
-- `src/utils/grapher.py`: Funciones para graficar señales continuas y discretas usando Matplotlib.
+Donde [tipo_de_senal] puede ser uno de:
+    seno
+    exponencial
+    triangular
+    cuadrada
+Ejemplo:
+    python main.py Tarea_1 seno
 
----
+Tarea 2: Graficar señal sinusoidal continua con frecuencia personalizada
+Ejemplo:
+    python main.py Tarea_2 2.5
 
-## Uso
+Notas
+Asegúrate de ejecutar el script desde la raíz del proyecto para que las rutas de importación funcionen correctamente.
 
-Desde la terminal, dentro del directorio del proyecto, ejecutar:
+El proyecto usa funciones de matplotlib para mostrar las gráficas, por lo que debe tener una interfaz gráfica disponible.
 
-```bash
-python main.py Tarea_1 <tipo_señal>
+Si usas un entorno virtual, activa el entorno antes de instalar los paquetes y ejecutar el script.
