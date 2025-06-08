@@ -95,10 +95,10 @@ def discrete_triangle():
 
 # 7. Señal cuadrada continua
 def continuous_square():
-    from scipy import signal
+    from scipy import signal    #librerias mas usada para las señales
     frequency = 2
-    number_of_points = 1000
-    time = np.linspace(0, 2, number_of_points)
+    number_of_points = 1000     #muestras que quieres
+    time = np.linspace(0, 2, number_of_points)  #vectores
     x_t = signal.square(2 * np.pi * frequency * time)
 
     continuous_plotter(
@@ -106,7 +106,7 @@ def continuous_square():
         'Continuous Square Signal', 'x₄(t) = sq(t, f)',
         'Time [s]', 'Amplitude')
 
-
+    
 # 8. Señal cuadrada discreta
 def discrete_square():
     from scipy import signal

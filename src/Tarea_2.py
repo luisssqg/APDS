@@ -11,5 +11,5 @@ def understanding_freq(des_freq):
     time = np.linspace(initial_time, end_time, number_of_points)
     xt = amplitude * np.sin(2 * np.pi * frequency * time)
     continuous_plotter(time, xt,
-    'Continuous Sine wave Signal', 'Sin wave Signal',
+    'Continuous Sine wave Signal','Sin wave Signal',
     'Time [s]', 'Amplitude')
