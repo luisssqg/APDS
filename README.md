@@ -42,11 +42,8 @@ Tarea 4: Análisis de Resolución de un DAC
 Calcula los niveles de salida de un DAC según el número de bits, determina el tamaño de paso y la resolución porcentual, y grafica la señal resultante.
 
 **Uso / Ejecución:**
-```bash
 python main.py Tarea_4 <bits>
 
- 
- 
  
  Exam_01: Señal Modulada AM y FFT
 
