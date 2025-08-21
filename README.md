@@ -31,7 +31,7 @@ Genera una señal senoidal de referencia (A=1, f=1Hz, ϕ=0) y una señal modific
 - Señal discreta de referencia
 - Señal discreta modificada
 
-**Uso / Ejecución:**
+Uso / Ejecución:**
 ```bash
 python main.py Tarea_3 <A> <f> <phi>
 
