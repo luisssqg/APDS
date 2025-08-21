@@ -1,16 +1,3 @@
-# Proyecto de Señales - Tareas 1 y 2
-
-Este proyecto permite graficar y analizar diferentes tipos de señales continuas y discretas, incluyendo señales sinusoidales, exponenciales, triangulares y cuadradas. Está organizado en dos tareas principales que pueden ser ejecutadas desde el archivo `main.py`.
-
-## Estructura del Proyecto
-    ├── main.py
-    ├── README.md
-    ├── requirements.txt
-    └── src/
-    ├── Tarea_1.py
-    ├── Tarea_2.py
-    └── utils/
-    └── grapher.py
 
 Tarea 1: Graficar señales continuas y discretas
 python main.py Tarea_1 [tipo_de_senal]
@@ -35,7 +22,7 @@ El proyecto usa funciones de matplotlib para mostrar las gráficas, por lo que d
 Si usas un entorno virtual, activa el entorno antes de instalar los paquetes y ejecutar el script.
 
 
-## Tarea 3: Comparación de Señales Senoidales
+Tarea 3: Comparación de Señales Senoidales
 
 **Descripción:**  
 Genera una señal senoidal de referencia (A=1, f=1Hz, ϕ=0) y una señal modificada según los parámetros de amplitud, frecuencia y fase. Muestra gráficas de:
@@ -49,7 +36,7 @@ Genera una señal senoidal de referencia (A=1, f=1Hz, ϕ=0) y una señal modific
 python main.py Tarea_3 <A> <f> <phi>
 
 
-## Tarea 4: Análisis de Resolución de un DAC
+Tarea 4: Análisis de Resolución de un DAC
 
 **Descripción:**  
 Calcula los niveles de salida de un DAC según el número de bits, determina el tamaño de paso y la resolución porcentual, y grafica la señal resultante.
@@ -58,8 +45,7 @@ Calcula los niveles de salida de un DAC según el número de bits, determina el 
 ```bash
 python main.py Tarea_4 <bits>
 
-
-## Exam_01: Señal Modulada AM y FFT
+ Exam_01: Señal Modulada AM y FFT
 
 **Objetivos:**  
 - Generar una señal modulada AM con portadora (`fc`) y moduladora (`fm`).  
@@ -71,7 +57,7 @@ python main.py Tarea_4 <bits>
 ```bash
 python main.py Exam_01
 
-## Exam_02: Señal Discreta y Análisis con DFT
+ Exam_02: Señal Discreta y Análisis con DFT
 
 **Objetivos:**  
 - Generar una señal discreta suma de dos senoidales con frecuencias conocidas (`f1`, `f2`).  
