@@ -10,7 +10,7 @@ def exam_p2():
     T = 6
     N = 1536
     n = np.arange(N)
-    
+
     f1, f2 = 8, 20
 
     X_n = np.sin(2*np.pi*f1*n/fs) + 0.5*np.sin(2*np.pi*f2*n/fs)
@@ -28,15 +28,15 @@ def exam_p2():
 
     plt.subplot(2,1,1)
     plt.plot(n/fs, X_n)
-    plt.title("Señal discreta limpia en el tiempo")
-    plt.xlabel("Tiempo [s]")
-    plt.ylabel("Amplitud")  
+    plt.title("discrete signal over time")
+    plt.xlabel("Time[s]")
+    plt.ylabel("Amplitude")  
     plt.grid()
 
     plt.subplot(2,1,2)
     plt.stem(fan[:N//2], np.abs(Xm1[:N//2]))
     plt.title("Espectro (DFT) de la señal limpia")
-    plt.xlabel("Frecuencia [Hz]")
+    plt.xlabel("Frequency [Hz]")
     plt.ylabel("|X(f)|")
     plt.grid()
 
@@ -53,14 +53,14 @@ def exam_p2():
     plt.subplot(2,1,1)
     plt.plot(n/fs, Signal_final)
     plt.title("Señal discreta con signal_noise en el tiempo")
-    plt.xlabel("Tiempo [s]")
-    plt.ylabel("Amplitud")
+    plt.xlabel("Time [s]")
+    plt.ylabel("Amplitude")
     plt.grid()
 
     plt.subplot(2,1,2)
     plt.stem(fan[:N//2], np.abs(Xm2[:N//2]))
     plt.title("Espectro (DFT) de la señal con signal_noise")
-    plt.xlabel("Frecuencia [Hz]")
+    plt.xlabel("Frequency [Hz]")
     plt.ylabel("|X(f)|")
     plt.grid()
 

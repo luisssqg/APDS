@@ -30,9 +30,9 @@ def exam_p1():
     p_a = X_mag[pico_indices]
     delta_f = fs / N
     
-    print(f"Resolución en frecuencia Δf = {delta_f} Hz")
-    print("Frecuencias de los picos:", p_f)
-    print("Amplitudes relativas:", p_a)
+    print(f"Frecuency resolution Δf = {delta_f} Hz") #aqui es la resulucion de la frecuiencia 
+    print("peak frequency:", p_f) #aqui la frecuencia de los picos 
+    print("Relative amplitudes:", p_a) #las amplitudes
 
     plt.figure(1)
     plt.subplots_adjust(hspace = 0.5)
